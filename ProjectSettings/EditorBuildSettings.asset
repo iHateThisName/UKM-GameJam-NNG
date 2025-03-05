@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/BuildScenes/MainMenu.unity
     guid: c5c902345361f7d44b8bc5d6a1baebce
   - enabled: 1
+    path: Assets/Scenes/BuildScenes/Intro.unity
+    guid: 53dfc0df729bd5b449227c2e7c53d647
+  - enabled: 1
     path: Assets/Scenes/BuildScenes/Airport.unity
     guid: a4ab5af78f4d19941bf56a9ba8d363b4
   m_configObjects:
