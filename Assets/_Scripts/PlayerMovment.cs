@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerMovment : MonoBehaviour {
     [SerializeField] private Transform playerTransform;
@@ -21,6 +22,9 @@ public class PlayerMovment : MonoBehaviour {
     private Coroutine dreamCooldownCoroutine;
     [SerializeField]private float dreamingCooldown = 3f;
     [SerializeField]private float maxDreamTime = 0.5f;
+
+    [SerializeField] private UnityEvent OnDreaming;
+    [SerializeField] private UnityEvent OnExitDream;
 
     private void FixedUpdate() {
         if (this.playerAnimator.IsAnimatingCooldown) return; // Do not allow movement when animating
@@ -61,6 +65,7 @@ public class PlayerMovment : MonoBehaviour {
                 this.rb2D.gravityScale = 0;
                 this.rb2D.linearVelocity = Vector2.zero;
                 this.IsDreaming = true;
+                this.OnDreaming?.Invoke();
                 this.dreamCooldownCoroutine = StartCoroutine(DreamingCooldownEnumartor());
                 this.forceWakeUpCoroutine = StartCoroutine(ForceWakeUp());
             } else if (this.IsDreaming && !this.playerAnimator.IsAnimatingCooldown) {
@@ -79,6 +84,7 @@ public class PlayerMovment : MonoBehaviour {
         this.rb2D.linearVelocity = Vector2.zero;
         if (this.playerAnimator != null) this.playerAnimator.currentPlayerState = PlayerAnimator.PlayerState.EndDreaming;
         this.IsDreaming = false;
+        this.OnExitDream?.Invoke();
     }
 
     private IEnumerator DreamingCooldownEnumartor() {
