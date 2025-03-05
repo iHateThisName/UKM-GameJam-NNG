@@ -14,7 +14,8 @@ In A Pilot's Dream, you play as a kiwi bird stuck on a baggage conveyor belt, do
 Move: Arrow Keys or W/A/S/D
 Jump: Spacebar
 Enter Dream World: Left Shift
-Brought to you by No Name Games.
+
+#### Brought to you by No Name Games.
 
 ## OLD SCOPE
 2D, puzzle, platformer.
