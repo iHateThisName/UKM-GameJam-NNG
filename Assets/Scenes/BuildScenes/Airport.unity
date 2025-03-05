@@ -646,6 +646,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3914484400597685853, guid: 00ba30328be498c4680a7abb68e7b6c4, type: 3}
+      propertyPath: maxDreamTime
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 7502045091489691417, guid: 00ba30328be498c4680a7abb68e7b6c4, type: 3}
       propertyPath: m_Name
       value: PlayerPrefab

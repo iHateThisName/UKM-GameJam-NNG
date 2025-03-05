@@ -17,6 +17,7 @@ public class PlayerAnimator : MonoBehaviour {
     [SerializeField] private float animationSpeed = 0.25f;
     [SerializeField] private SpriteRenderer playerSprite;
     [SerializeField] private PlayerMovment playerMovment;
+    [SerializeField] private PlayerSFX playerSFX;
     [SerializeField] private Sprite[] startDreamingSprites;
     [SerializeField] private Sprite[] DreamingSprites;
     private Sprite fallbackSprite;
@@ -27,6 +28,10 @@ public class PlayerAnimator : MonoBehaviour {
     private void FixedUpdate() {
         if (isAnimatingCooldown) return;
         switch (currentPlayerState) {
+            case PlayerState.Jump:
+                this.playerSprite.sprite = this.fallbackSprite;
+                playerSFX.PlayJumpSFX();
+                break;
             case PlayerState.StartDreaming:
                 this.isAnimatingCooldown = true;
                 StartCoroutine(AnimateStartDreaming());

@@ -16,6 +16,11 @@ public class PlayerMovment : MonoBehaviour {
 
     private Vector2 moveInput;
     private bool isSpriteRight = true;
+    private bool isAbleToDream = true;
+    private Coroutine forceWakeUpCoroutine;
+    private Coroutine dreamCooldownCoroutine;
+    [SerializeField]private float dreamingCooldown = 3f;
+    [SerializeField]private float maxDreamTime = 0.5f;
 
     private void FixedUpdate() {
         if (this.playerAnimator.IsAnimatingCooldown) return; // Do not allow movement when animating
@@ -50,18 +55,41 @@ public class PlayerMovment : MonoBehaviour {
 
     private void Dreaming() {
         if (Input.GetKeyDown(KeyCode.LeftShift)) {
-            this.IsDreaming = !this.IsDreaming;
 
-            if (this.IsDreaming) {
-                if (this.playerAnimator != null) this.playerAnimator.currentPlayerState = PlayerAnimator.PlayerState.StartDreaming;
+            if (!this.IsDreaming && this.isAbleToDream && !this.playerAnimator.IsAnimatingCooldown) {
+                this.playerAnimator.currentPlayerState = PlayerAnimator.PlayerState.StartDreaming;
                 this.rb2D.gravityScale = 0;
                 this.rb2D.linearVelocity = Vector2.zero;
-            } else {
-                this.rb2D.gravityScale = 4;
-                this.rb2D.linearVelocity = Vector2.zero;
-                if (this.playerAnimator != null) this.playerAnimator.currentPlayerState = PlayerAnimator.PlayerState.EndDreaming;
+                this.IsDreaming = true;
+                this.dreamCooldownCoroutine = StartCoroutine(DreamingCooldownEnumartor());
+                this.forceWakeUpCoroutine = StartCoroutine(ForceWakeUp());
+            } else if (this.IsDreaming && !this.playerAnimator.IsAnimatingCooldown) {
+                if (this.forceWakeUpCoroutine != null) {
+                    StopCoroutine(this.forceWakeUpCoroutine);
+                    this.forceWakeUpCoroutine = null;
+                }
+
+                ExitDream();
             }
         }
+    }
+
+    private void ExitDream() {
+        this.rb2D.gravityScale = 4;
+        this.rb2D.linearVelocity = Vector2.zero;
+        if (this.playerAnimator != null) this.playerAnimator.currentPlayerState = PlayerAnimator.PlayerState.EndDreaming;
+        this.IsDreaming = false;
+    }
+
+    private IEnumerator DreamingCooldownEnumartor() {
+        this.isAbleToDream = false;
+        yield return new WaitForSecondsRealtime(this.dreamingCooldown);
+        this.isAbleToDream = true;
+    }
+
+    private IEnumerator ForceWakeUp() {
+        yield return new WaitForSecondsRealtime(this.maxDreamTime);
+        ExitDream();
     }
 
     private void FlipSprite() {
