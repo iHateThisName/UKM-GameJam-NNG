@@ -22,7 +22,8 @@ public class ObstacleSpawner : MonoBehaviour
             if (obstacles.Length > 0)
             {
                 int randomIndex = Random.Range(0, obstacles.Length);
-                GameObject spawnedObstacle = Instantiate(obstacles[randomIndex], spawnPoint.position, Quaternion.identity);
+                float randomYPosition = Random.Range(-1f, 1f);
+                GameObject spawnedObstacle = Instantiate(obstacles[randomIndex], spawnPoint.position + new Vector3(0, randomYPosition, 0), Quaternion.identity);
                 spawnedObstacle.AddComponent<ObstacleMover>().speed = obstacleSpeed;
             }
         }

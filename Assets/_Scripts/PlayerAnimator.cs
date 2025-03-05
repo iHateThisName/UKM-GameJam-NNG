@@ -22,11 +22,14 @@ public class PlayerAnimator : MonoBehaviour {
     [SerializeField] private Sprite[] DreamingSprites;
     private Sprite fallbackSprite;
 
+    private PlayerState previousPlayerState;
+
     private void Start() {
         this.fallbackSprite = playerSprite.sprite;
     }
     private void FixedUpdate() {
-        if (isAnimatingCooldown) return;
+        playerSprite.size = new Vector2(2, 2);
+        if (isAnimatingCooldown || this.previousPlayerState == this.currentPlayerState) return;
         switch (currentPlayerState) {
             case PlayerState.Jump:
                 this.playerSprite.sprite = this.fallbackSprite;
@@ -34,6 +37,7 @@ public class PlayerAnimator : MonoBehaviour {
                 break;
             case PlayerState.StartDreaming:
                 this.isAnimatingCooldown = true;
+                this.playerSFX.PlayDream();
                 StartCoroutine(AnimateStartDreaming());
                 break;
             case PlayerState.Dreaming:
@@ -41,8 +45,10 @@ public class PlayerAnimator : MonoBehaviour {
                 break;
             default:
                 this.playerSprite.sprite = this.fallbackSprite;
+                this.playerSFX.PlayReal();
                 break;
         }
+        this.previousPlayerState = this.currentPlayerState;
     }
 
     private IEnumerator AnimateStartDreaming() {

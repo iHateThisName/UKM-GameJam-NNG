@@ -287,13 +287,18 @@ MonoBehaviour:
   playerTransform: {fileID: 3326593860542842006}
   moveSpeed: 3.5
   jumpPower: 16
-  gravity: 9.81
-  groundCheck: {fileID: 4337676811902489541}
   rb2D: {fileID: 4634498615520962650}
+  groundCheck: {fileID: 4337676811902489541}
   playerAnimator: {fileID: 8716100101894092701}
   IsDreaming: 0
   dreamingCooldown: 3
   maxDreamTime: 0.5
+  OnDreaming:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExitDream:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6804482639158788405
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,8 +379,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.84, y: 2}
+  m_DrawMode: 1
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -530,7 +535,7 @@ MonoBehaviour:
   animationSpeed: 0.2
   playerSprite: {fileID: 9082206263474768487}
   playerMovment: {fileID: 3914484400597685853}
-  playerSFX: {fileID: 0}
+  playerSFX: {fileID: 7548365264098423927}
   startDreamingSprites:
   - {fileID: 670160008884120025, guid: 2f0b28b185c122e42aef0bf477dd01d7, type: 3}
   - {fileID: 8480604393676522859, guid: 2f0b28b185c122e42aef0bf477dd01d7, type: 3}

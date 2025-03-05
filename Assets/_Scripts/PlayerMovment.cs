@@ -4,29 +4,36 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class PlayerMovment : MonoBehaviour {
+    [Header("Player Settings")]
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float moveSpeed = 2.5f;
     [SerializeField] private float jumpPower = 16f;
-    [SerializeField] private float gravity = 9.81f;
-    [SerializeField] private PlayerGroundCheck groundCheck;
 
+    [Header("Components")]
     [SerializeField] private Rigidbody2D rb2D;
+    [SerializeField] private PlayerGroundCheck groundCheck;
     [SerializeField] private PlayerAnimator playerAnimator;
 
+    [Header("Dreaming Settings")]
     public bool IsDreaming = false;
-
-    private Vector2 moveInput;
-    private bool isSpriteRight = true;
     private bool isAbleToDream = true;
     private Coroutine forceWakeUpCoroutine;
-    private Coroutine dreamCooldownCoroutine;
-    [SerializeField]private float dreamingCooldown = 3f;
-    [SerializeField]private float maxDreamTime = 0.5f;
+    [SerializeField] private float dreamingCooldown = 3f;
+    [SerializeField] private float maxDreamTime = 0.5f;
 
+    [Header("Events")]
     [SerializeField] private UnityEvent OnDreaming;
     [SerializeField] private UnityEvent OnExitDream;
 
+    private Vector2 moveInput;
+    private bool isSpriteRight = true;
+
     private void FixedUpdate() {
+        float x = this.playerTransform.position.x;
+        if (x < -10f || x > 10f) { // The player died
+            GameManager.Instance.LoadScene("MainMenu");
+        }
+
         if (this.playerAnimator.IsAnimatingCooldown) return; // Do not allow movement when animating
         if (IsDreaming) {
             rb2D.linearVelocity = new Vector2(moveInput.x * moveSpeed, moveInput.y * moveSpeed);
@@ -34,7 +41,6 @@ public class PlayerMovment : MonoBehaviour {
             rb2D.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb2D.linearVelocity.y);
         }
     }
-
 
     // Update is called once per frame
     void Update() {
@@ -66,7 +72,7 @@ public class PlayerMovment : MonoBehaviour {
                 this.rb2D.linearVelocity = Vector2.zero;
                 this.IsDreaming = true;
                 this.OnDreaming?.Invoke();
-                this.dreamCooldownCoroutine = StartCoroutine(DreamingCooldownEnumartor());
+                StartCoroutine(DreamingCooldownEnumartor());
                 this.forceWakeUpCoroutine = StartCoroutine(ForceWakeUp());
             } else if (this.IsDreaming && !this.playerAnimator.IsAnimatingCooldown) {
                 if (this.forceWakeUpCoroutine != null) {
