@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 2f0b28b185c122e42aef0bf477dd01d7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8425919058317848714
+    second: KiwiJump_0
+  - first:
+      213: -6331797889173451984
+    second: KiwiJump_1
+  - first:
+      213: 8543253741867044099
+    second: KiwiJump_2
+  - first:
+      213: 7929395093080941779
+    second: KiwiJump_3
+  - first:
+      213: -3676975266587476029
+    second: KiwiJump_4
+  - first:
+      213: -2954127887689651141
+    second: KiwiJump_5
+  - first:
+      213: -7119236394018499281
+    second: KiwiJump_6
+  - first:
+      213: 670160008884120025
+    second: KiwiJump_7
+  - first:
+      213: -8514948431298520498
+    second: KiwiJump_8
+  - first:
+      213: -7890536455719899414
+    second: KiwiJump_9
+  - first:
+      213: 7901985906312494819
+    second: KiwiJump_10
+  - first:
+      213: -7259560744296840460
+    second: KiwiJump_11
+  - first:
+      213: -3741422278838938892
+    second: KiwiJump_12
+  - first:
+      213: 8480604393676522859
+    second: KiwiJump_13
+  - first:
+      213: 6587431398678509250
+    second: KiwiJump_14
+  - first:
+      213: 6946013806597921610
+    second: KiwiJump_15
+  - first:
+      213: 4714089836106219098
+    second: KiwiJump_16
+  - first:
+      213: 973566883377002564
+    second: KiwiJump_17
+  - first:
+      213: 5754341629100465577
+    second: KiwiJump_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KiwiJump_0
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 849
+        width: 799
+        height: 716
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80ba39bdb0eee470800000000000000
+      internalID: 8425919058317848714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_1
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 1478
+        width: 40
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03b8f3afd5fe028a0800000000000000
+      internalID: -6331797889173451984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_2
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 1408
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d030e930cbf8670800000000000000
+      internalID: 8543253741867044099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_3
+      rect:
+        serializedVersion: 2
+        x: 2633
+        y: 1331
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4a0de43deda0e60800000000000000
+      internalID: 7929395093080941779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_4
+      rect:
+        serializedVersion: 2
+        x: 2713
+        y: 1313
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cff72bf972c8fcc0800000000000000
+      internalID: -3676975266587476029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_5
+      rect:
+        serializedVersion: 2
+        x: 2033
+        y: 1198
+        width: 24
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3cee297654d007d0800000000000000
+      internalID: -2954127887689651141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_6
+      rect:
+        serializedVersion: 2
+        x: 2726
+        y: 1247
+        width: 72
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f259e7e0834633d90800000000000000
+      internalID: -7119236394018499281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_7
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 386
+        width: 397
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9e5383af2ec4900800000000000000
+      internalID: 670160008884120025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_8
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 761
+        width: 13
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a9eaf0483d4d980800000000000000
+      internalID: -8514948431298520498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_9
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 750
+        width: 19
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeeab8d36ee2f7290800000000000000
+      internalID: -7890536455719899414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_10
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 213
+        width: 219
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee36e5b05e79ad60800000000000000
+      internalID: 7901985906312494819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_11
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 653
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f201d247fbd04b90800000000000000
+      internalID: -7259560744296840460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_12
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 639
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f29213a24cc31cc0800000000000000
+      internalID: -3741422278838938892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_13
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 409
+        width: 300
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b65c4bd83c821b570800000000000000
+      internalID: 8480604393676522859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_14
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 469
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6bc7494f14b6b50800000000000000
+      internalID: 6587431398678509250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_15
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 411
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b5a3b61c2356060800000000000000
+      internalID: 6946013806597921610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_16
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 231
+        width: 54
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ef368cabfcb6140800000000000000
+      internalID: 4714089836106219098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_17
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 227
+        width: 10
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44835c81cedc28d00800000000000000
+      internalID: 973566883377002564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KiwiJump_18
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 264
+        width: 21
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad96ce49378bdf40800000000000000
+      internalID: 5754341629100465577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c97ddfa9df896254b96a62936cba9a28
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      KiwiJump_0: 8425919058317848714
+      KiwiJump_1: -6331797889173451984
+      KiwiJump_10: 7901985906312494819
+      KiwiJump_11: -7259560744296840460
+      KiwiJump_12: -3741422278838938892
+      KiwiJump_13: 8480604393676522859
+      KiwiJump_14: 6587431398678509250
+      KiwiJump_15: 6946013806597921610
+      KiwiJump_16: 4714089836106219098
+      KiwiJump_17: 973566883377002564
+      KiwiJump_18: 5754341629100465577
+      KiwiJump_2: 8543253741867044099
+      KiwiJump_3: 7929395093080941779
+      KiwiJump_4: -3676975266587476029
+      KiwiJump_5: -2954127887689651141
+      KiwiJump_6: -7119236394018499281
+      KiwiJump_7: 670160008884120025
+      KiwiJump_8: -8514948431298520498
+      KiwiJump_9: -7890536455719899414
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

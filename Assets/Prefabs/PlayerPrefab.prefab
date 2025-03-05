@@ -139,10 +139,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 3326593860542842006}
   moveSpeed: 3.5
-  jumpHeight: 4
+  jumpPower: 16
   gravity: 9.81
   groundCheck: {fileID: 4337676811902489541}
   rb2D: {fileID: 4634498615520962650}
+  playerAnimator: {fileID: 8716100101894092701}
   IsDreaming: 0
 --- !u!1 &6804482639158788405
 GameObject:
@@ -263,6 +264,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3647495363638812932}
+  - {fileID: 5386238198222833936}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &6046548664664102130
@@ -329,3 +331,59 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!1 &7931864722000892177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5386238198222833936}
+  - component: {fileID: 8716100101894092701}
+  m_Layer: 0
+  m_Name: PlayerAnimator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5386238198222833936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7931864722000892177}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3326593860542842006}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8716100101894092701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7931864722000892177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0cee83b081676647805f169ad03249d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPlayerState: 0
+  isAnimatingCooldown: 0
+  animationSpeed: 0.2
+  playerSprite: {fileID: 9082206263474768487}
+  playerMovment: {fileID: 3914484400597685853}
+  startDreamingSprites:
+  - {fileID: 670160008884120025, guid: 2f0b28b185c122e42aef0bf477dd01d7, type: 3}
+  - {fileID: 8480604393676522859, guid: 2f0b28b185c122e42aef0bf477dd01d7, type: 3}
+  - {fileID: 7901985906312494819, guid: 2f0b28b185c122e42aef0bf477dd01d7, type: 3}
+  - {fileID: 8425919058317848714, guid: 2f0b28b185c122e42aef0bf477dd01d7, type: 3}
+  DreamingSprites:
+  - {fileID: 8425919058317848714, guid: 2f0b28b185c122e42aef0bf477dd01d7, type: 3}
